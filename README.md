@@ -2,7 +2,7 @@
 
 ## A Modern Flight Booking Platform
 
-![Tripma Screenshot](https://via.placeholder.com/800x400.png?text=Tripma+Preview)  
+![Tripma Screenshot](./src/assets/readme-main.png)  
 *Your go-to platform for seamless flight bookings.*  
 
 ---
@@ -88,4 +88,4 @@ This project is a result of the collaborative efforts of our dedicated team:
 
 ## 🗣 **Visit The Site**  
 
-- **Link To Site:** [Tripma](https://tripma.netlify.app)  
+- **Link To Site:** [Tripma](https://t-ripma.netlify.app)  
