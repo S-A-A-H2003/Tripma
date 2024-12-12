@@ -7,7 +7,7 @@ import { Suspense } from 'react';
 import Loading from './components/Loading';
 
 //constants
-import { Router } from './routers/Router';
+import { Router } from './routers/router';
 
 // Example to use custom hook get
 // import { useGet } from './hooks/get';
