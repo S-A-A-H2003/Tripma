@@ -1,0 +1,17 @@
+export const RouterPath = {
+    FLIGHTS : '/',
+    FLIGHTSDETAILS : '/FlightsDetails',
+    HOTELS : '/Hotels',
+    HOTELDETAILS : '/HotelDetails',
+    PACKAGES : '/Packages',
+    PROFILE : '/Profile',
+    SIGNIN : '/SignIn',
+    SIGNUP : '/SignUp',
+    FORGETPASSWORD : '/ForgetPassword',
+    VERIFYCODE: '/VerifyCode',
+    RESETPASSWORD : '/ResetPassword',
+    FORMONE : '/FormOne',
+    FORMTWO : '/FormTwo',
+    ORDERSEAT : '/OrderSeat',
+    ERROR404 : '*',
+}
