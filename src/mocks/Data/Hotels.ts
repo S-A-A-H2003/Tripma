@@ -1,4 +1,4 @@
-export const FlightData = [
+export const HotelData = [
    {
      "id":"1",
      "place": "Paris, France",

@@ -1,7 +1,7 @@
 import './App.css';
 
 import { useRoutes } from 'react-router-dom';
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 
 //components
 import Loading from './components/Loading';
@@ -11,6 +11,8 @@ import { Router } from './routers/Router';
 
 // Example to use custom hook get
 // import { useGet } from './hooks/get';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function App() {
 
@@ -19,8 +21,10 @@ export default function App() {
   // Example to use custom hook get
   // const {data , isLoading , isSuccessful , message} = useGet('https://tripma.com/user');
   // console.log(data , isLoading , isSuccessful , message);
-  
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Suspense fallback = {<Loading/>}>

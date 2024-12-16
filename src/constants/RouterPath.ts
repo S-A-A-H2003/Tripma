@@ -1,8 +1,9 @@
 export const RouterPath = {
-    FLIGHTS : '/',
-    FLIGHTSDETAILS : '/FlightsDetails',
+    HOME: '/',
+    FLIGHTS : 'Flights',
+    FLIGHTSDETAILS : '/FlightsDetails/:id',
     HOTELS : '/Hotels',
-    HOTELDETAILS : '/HotelDetails',
+    HOTELDETAILS : '/HotelDetails/:id',
     PACKAGES : '/Packages',
     PROFILE : '/Profile',
     SIGNIN : '/SignIn',
