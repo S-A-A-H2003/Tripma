@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         customPurple: '#605DEC',
+        Turquoise:'#22C3A6',
       },
       width: {
         cardMd: '410px' ,

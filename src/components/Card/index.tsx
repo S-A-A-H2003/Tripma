@@ -8,17 +8,16 @@ interface props {
   discription:string,
   img:string,
   typeImg:'sm' | 'md' | 'lg',
-  key:any,
   animation?:string,
   className?:string,
   onClick?:()=>void,
 }
 
-export default function Card({place , title , price , discription , img , typeImg='md', key , animation , className , onClick}:props) {
+export default function Card({place , title , price , discription , img , typeImg='md' , animation , className , onClick}:props) {
   return (
     <>
         {typeImg==='md'?
-          <div className={className +' w-cardMd h-cardMd rounded-lg shadow-md transition-all'} key={key} data-aos={animation} onClick={onClick}>
+          <div className={className +' w-cardMd h-cardMd rounded-lg shadow-md transition-all'} data-aos={animation} onClick={onClick}>
               <div>
                 <img className='rounded-t-lg w-cardMd h-96' src={img} alt={place} />
               </div>
@@ -31,7 +30,7 @@ export default function Card({place , title , price , discription , img , typeIm
               </div>        
           </div>
         :typeImg==='lg'?
-          <div className={className +' w-cardLg h-cardMd rounded-lg shadow-md'} key={key} data-aos={animation} onClick={onClick}>
+          <div className={className +' w-cardLg h-cardMd rounded-lg shadow-md'} data-aos={animation} onClick={onClick}>
             <div>
               <img className='rounded-t-lg w-cardLg h-96' src={img} alt={place} />
             </div>

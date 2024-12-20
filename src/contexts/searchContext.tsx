@@ -5,20 +5,20 @@ interface Props {
     children: React.ReactNode;
 }
 
-export const searchContext = createContext<any>(null);
+export const SearchContext = createContext<any>(null);
 
-const searchProvider =({children}:Props)=>{
+const SearchProvider =({children}:Props)=>{
     const [search,setSearch]=useState<[]>([])
     return(
-        <searchContext.Provider value={{search,setSearch}}>
+        <SearchContext.Provider value={{search,setSearch}}>
         {children}
-        </searchContext.Provider>
+        </SearchContext.Provider>
     )
 }
-export default searchProvider;
+export default SearchProvider;
 
 export const useSearchContext=()=>{
-    return useContext(searchContext)
+    return useContext(SearchContext)
 }
 
 
